@@ -11,13 +11,13 @@ spec:
     spec:
       containers:
       - name: master
-        image: gcr.io/festive-ray-133923/webapp:v1  #gcr.io/google_samples/gb-frontend:v10
+        image: gcr.io/festive-ray-133923/webapp:v2  
         resources:
           requests:
             cpu: 100m
             memory: 100Mi
         env:
-        - name: GET_HOSTS_FROM
-          value: env
+        - name: ZEUS_TOKEN
+          value: "8dcccc00"
         ports:
         - containerPort: 80
